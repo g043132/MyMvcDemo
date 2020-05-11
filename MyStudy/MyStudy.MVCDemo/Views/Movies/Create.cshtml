@@ -1,0 +1,12 @@
+@model MyStudy.MVCDemo.Models.Movie
+@{
+    ViewData["Title"] = "新建";
+}
+<form method="POST">
+<h2>新建</h2>
+<p>ID：@Html.EditorFor(model=>model.Id)</p>
+<p>标题：@Html.EditorFor(model=>model.Title)</p>
+ <div class="form-group">
+      <input type="submit" value="Save" class="btn btn-primary" />
+ </div>
+</form>

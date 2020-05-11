@@ -1,0 +1,13 @@
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\bin\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.exe
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\bin\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.deps.json
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\bin\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.runtimeconfig.json
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\bin\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.runtimeconfig.dev.json
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\bin\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.dll
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\bin\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.pdb
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\obj\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.csprojAssemblyReference.cache
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\obj\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.csproj.CoreCompileInputs.cache
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\obj\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.AssemblyInfoInputs.cache
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\obj\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.AssemblyInfo.cs
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\obj\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.dll
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\obj\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.pdb
+D:\donet\dotnetProj\MyStudy\MyStudy.ConsoleDemo\obj\Debug\netcoreapp3.1\MyStudy.ConsoleDemo.genruntimeconfig.cache

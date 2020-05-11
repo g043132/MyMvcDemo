@@ -1,0 +1,76 @@
+﻿@* @{
+    ViewData["Title"] = "about us";
+} *@
+
+<div class="text-center">
+    <h1 class="display-4">欢迎您，XXXX</h1>
+<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<div id="app">
+     {{post()}}
+   <template>
+  <el-table
+    :data="tableData"
+    style="width: 100%">
+    <el-table-column
+      prop="BookName"
+      label="标题"
+      width="400">
+    </el-table-column>
+      <el-table-column
+      prop="Comment"
+      label="评论数">
+    </el-table-column>
+    <el-table-column
+      prop="Price"
+      label="价格">
+    </el-table-column>
+    <el-table-column
+      prop="Link"
+      label="地址">
+    </el-table-column>
+    <el-table-column
+      label="操作"
+      width="100"><span>查看</span>
+      <template>        
+        <el-button v-on:click="handleClick(scope.row)" type="text" title="查看">查看</el-button>
+        <el-button type="text" >编辑</el-button>
+      </template>
+    </el-table-column>
+  </el-table>
+</template>
+</div>
+<script  type="text/javascript">
+    var Main = {
+    methods:{
+        post: function() {
+               //发送 post 请求
+	            this.$http.post('https://localhost:5001/Products/IndexTest',{emulateJSON:true}).then(function(res){
+                    this.tableData=res.body;   
+                    this.msg=res.body;
+                },function(res){
+                    console.log(res.status);
+                });
+            },
+            handleClick(row) {
+        console.log(row);
+      }
+    },
+    data() {
+      return {
+        msg:null,
+        tableData: [{
+          title: '王小虎',
+          url: '上海市普陀区金沙江路 1518 弄'
+        }]
+      }
+    }
+  }
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app')
+
+</script>

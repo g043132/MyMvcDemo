@@ -1,0 +1,48 @@
+创建解决方案
+dotnet new sln -o MyStudy
+
+创建类库
+dotnet new classlib -o  MyStudy.Model
+
+创建控制台
+dotnet new console -o  MyStudy.Console
+
+创建website
+dotnet new web -o  MyStudy.Web
+
+dotnet sln add  .\MyStudy.HelloWorld\MyStudy.HelloWorld.csproj
+已将项目“MyStudy.HelloWorld\MyStudy.HelloWorld.csproj”添加到解决方案中。
+dotnet sln add  .\MyStudy.Model\MyStudy.Model.csproj
+已将项目“MyStudy.Model\MyStudy.Model.csproj”添加到解决方案中。
+
+dotnet add reference ../MyStudy.Model/MyStudy.Model.csproj
+已将引用“..\MyStudy.Model\MyStudy.Model.csproj”添加到项目。
+
+dotnet add package Newtonsoft.Json
+引用相关dll文件
+
+dotnet restore //编译项目
+dotnet run  //运行项目
+dotnet new mvc -n MvcDemo
+
+dotnet add package DocumentFormat.OpenXml -v 2.8.1  //添加程序集
+
+
+//使用基架工具为电影模型生成“创建”、“读取”、“更新”和“删除”(CRUD) 页面。
+dotnet aspnet-codegenerator controller -name MoviesController -m Movie  -dc MvcMovieContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+
+//初始迁移
+dotnet ef migrations add InitialCreate1  (Done. To undo this action, use 'ef migrations remove')
+dotnet ef database update 更新字段或库
+
+//mysql
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package MySql.Data.EntityFrameworkCore
+
+//sqllite+sqlserver
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+//Json
+dotnet add package  Newtonsoft.Json
+

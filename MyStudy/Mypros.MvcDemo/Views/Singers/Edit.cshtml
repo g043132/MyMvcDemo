@@ -1,0 +1,16 @@
+@model Mypros.MvcDemo.Models.Singer
+@{
+    ViewData["Title"] = "编辑页";
+}
+<form method="POST">
+<h2>编辑页</h2>
+<p>ID：@Html.DisplayFor(model=>model.Id)</p>
+<p>标题：@Html.EditorFor(model=>model.Name)</p>
+<p>URL:@Html.EditorFor(model => model.Url)</p>
+ <div class="form-group">
+    <input type="submit" value="Save" class="btn btn-primary" />
+ </div>
+<div>
+    @* <a asp-page="./Index">Back to List</a> *@
+</div>
+</form>
