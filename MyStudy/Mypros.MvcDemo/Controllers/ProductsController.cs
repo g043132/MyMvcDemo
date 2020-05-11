@@ -62,7 +62,7 @@ namespace Mypros.MvcDemo.Controllers
         //Statistics
         public IActionResult Statistics()
         {
-            return View();
+            return View("");
         }
                 
     }
